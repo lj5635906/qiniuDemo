@@ -1,5 +1,7 @@
 package com.qiniu.server;
 
+import java.util.UUID;
+
 import com.qiniu.Constant;
 import com.qiniu.http.Response;
 import com.qiniu.util.Auth;
@@ -18,7 +20,9 @@ public class QiNiuMainDemo {
 		// 密钥配置
 		Auth auth = Auth.create(Constant.ACCESS_KEY, Constant.SECRET_KEY);
 		
-		QiNiuMainDemo.download(auth);
+		QiNiuMainDemo.upload(auth);
+		
+//		System.out.println(UUID.randomUUID());
 	}
 	
 	public static void download(Auth auth){
@@ -38,8 +42,8 @@ public class QiNiuMainDemo {
 
 	public static void upload(Auth auth) {
 		QiNiuUploadDemo upload = new QiNiuUploadDemo();
-		String filePath = "F:\\IMG_0307.JPG";
-		String key = "123456";
+		String filePath = "F:\\testUpload";
+		String key = UUID.randomUUID().toString();
 		String token = Token.getUploadToken(auth, "lj5635906");
 		try {
 			Response response = upload.breakpointUpload(filePath, key, token);
