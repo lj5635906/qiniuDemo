@@ -2,7 +2,7 @@ package com.qiniu.server;
 
 import java.util.UUID;
 
-import com.qiniu.Constant;
+import com.qiniu.constant.Constant;
 import com.qiniu.http.Response;
 import com.qiniu.util.Auth;
 import com.qiniu.util.Token;

@@ -1,4 +1,4 @@
-package com.qiniu;
+package com.qiniu.constant;
 
 /**
  * @author Roger
@@ -26,6 +26,18 @@ public class Constant {
 	 * 七牛域名
 	 */
 	public static final String DOMAIN_NAME = "http://7xnux8.com1.z0.glb.clouddn.com";
+
+	/** 补充长度位数为5位 */
+	public static final int PAD_SIZE_8 = 8;
+
+	/** 补充用字符 */
+	public static final String DEFAULT_0 = "0";
+
+	/** 流水号最大值 */
+	public static final int MAX_SERIAL_NUMBER = 99999999;
+
+	/** 补充长度位数为5位 */
+	public static final int PAD_SIZE_5 = 5;
 
 	/**
 	 * @author Roger
@@ -77,62 +89,62 @@ public class Constant {
 		 * 镜像回源失败。（主要指镜像源服务器出现异常）
 		 */
 		String code_478 = "478";
-		
+
 		/**
 		 * 服务端不可用。
 		 */
 		String code_503 = "503";
-		
+
 		/**
 		 * 服务端操作超时。
 		 */
 		String code_504 = "504";
-		
+
 		/**
 		 * 上传成功但是回调失败。（包括业务服务器异常；七牛服务器异常；服务器间网络异常）
 		 */
 		String code_579 = "579";
-		
+
 		/**
 		 * 服务端操作失败。
 		 */
 		String code_599 = "599";
-		
+
 		/**
 		 * 资源内容被修改。
 		 */
 		String code_608 = "608";
-		
+
 		/**
 		 * 指定资源不存在或已被删除
 		 */
 		String code_612 = "612";
-		
+
 		/**
 		 * 目标资源已存在。
 		 */
 		String code_614 = "614";
-		
+
 		/**
 		 * 已创建的空间数量达到上限，无法创建新空间。
 		 */
 		String code_630 = "630";
-		
+
 		/**
 		 * 指定空间不存在。
 		 */
 		String code_631 = "631";
-		
+
 		/**
 		 * 调用列举资源（list）接口时，指定非法的marker参数。
 		 */
 		String code_640 = "640";
-		
+
 		/**
 		 * 在断点续上传过程中，后续上传接收地址不正确或ctx信息已过期。
 		 */
 		String code_701 = "701";
-		
+
 	}
 
 }

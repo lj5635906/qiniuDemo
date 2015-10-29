@@ -1,8 +1,9 @@
 package com.qiniu.server;
 
 import java.io.File;
-import com.qiniu.Constant;
+
 import com.qiniu.common.QiniuException;
+import com.qiniu.constant.Constant;
 import com.qiniu.http.Response;
 import com.qiniu.storage.Recorder;
 import com.qiniu.storage.UploadManager;

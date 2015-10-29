@@ -1,6 +1,6 @@
 package com.qiniu.server;
 
-import com.qiniu.Constant;
+import com.qiniu.constant.Constant;
 import com.qiniu.util.Auth;
 
 /**
